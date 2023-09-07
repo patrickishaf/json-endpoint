@@ -21,7 +21,10 @@ app.get('/api', function(req, res) {
   const { slack_name, track } = req.query;
   const date = new Date();
   const weekday = getWeekdayFromCode(date.getDay());
-  const utcDateString = date.toISOString();
+  let utcDateString = date.toISOString();
+
+  const utcDateParts = utcDateString.split('.');
+  utcDateString = utcDateParts[0] + 'Z';
 
   res.json({
     slack_name: slack_name ?? "no slack name specified",

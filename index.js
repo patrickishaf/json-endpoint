@@ -26,8 +26,8 @@ app.get('/', function(req, res) {
     current_day: getWeekdayFromCode(date.getDay()),
     utc_time: date,
     track: track ?? "no track specified",
-    github_file_url: "https://github.com/username/repo/blob/main/file_name.ext",
-    github_repo_url: "https://github.com/username/repo",
+    github_file_url: "https://github.com/patrickishaf/json-endpoint/blob/main/index.js",
+    github_repo_url: "https://github.com/patrickishaf/json-endpoint",
     status_code: 200
   })
 })

@@ -30,7 +30,22 @@ app.get('/', function(req, res) {
     github_repo_url: "https://github.com/patrickishaf/json-endpoint",
     status_code: 200
   })
-})
+});
+
+app.get('/api', function(req, res) {
+  const { slack_name, track } = req.query;
+  const date = new Date();
+
+  res.json({
+    slack_name: slack_name ?? "no slack name specified",
+    current_day: getWeekdayFromCode(date.getDay()),
+    utc_time: date,
+    track: track ?? "no track specified",
+    github_file_url: "https://github.com/patrickishaf/json-endpoint/blob/main/index.js",
+    github_repo_url: "https://github.com/patrickishaf/json-endpoint",
+    status_code: 200
+  })
+});
 
 app.listen(PORT, function() {
   console.log('server listening on port ' + PORT);

@@ -46,10 +46,16 @@ Here are the CRUD endpoints available:
 - **PATCH** */api/:id:* Update a person by ID.
 - **DELETE** */api/:id:* Delete a person by ID.
 
+## Use Case Diagram
+
+![UML diagrams](https://github.com/patrickishaf/json-endpoint/assets/56861840/ee93af51-5fdc-4dd7-a6e1-638339ad37d7)
+
+
 For detailed API documentation, please refer to the DOCUMENTATION.md file.
 
 ## Testing the API
 You can test the API using tools like Postman or curl. This is a link to the published documentation:
+![Uploading UML diagrams.svg…]()
 
 https://documenter.getpostman.com/view/27707407/2s9YC5wruy
 

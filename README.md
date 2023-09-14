@@ -41,18 +41,25 @@ The API should now be running on http://localhost:3000 (or the port specified in
 ## API Endpoints
 Here are the CRUD endpoints available:
 
-- **GET** */api/:user_id*: Get details for a specific person by ID.
-- **POST** */api/:* Create a new person.
-- **PATCH** */api/:id:* Update a person by ID.
-- **DELETE** */api/:id:* Delete a person by ID.
+- **GET** */api/:user_id* : Get details for a specific person by ID.
+- **POST** */api/* : Create a new person.
+- **PATCH** */api/:id* : Update a person by ID.
+- **DELETE** */api/:id* : Delete a person by ID.
 
 For detailed API documentation, please refer to the DOCUMENTATION.md file.
 
 ## Testing the API
-You can test the API using tools like Postman or curl. This is a link to the published documentation:
+You can test the API using Postman. The steps are as follows:
+
+1. View the documentation using this link
 
 https://documenter.getpostman.com/view/27707407/2s9YC5wruy
 
+2. Import the postman collection
+
+3. Click on the dropdown of the collection and select "generate tests"
+
+4. Locate "Run Collection" at the top-right corner of postman
 
 ## Acknowledgments
 Special thanks to Zuri and the mentors.

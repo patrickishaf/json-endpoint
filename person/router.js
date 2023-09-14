@@ -4,12 +4,12 @@ const validator = require('./validators');
 
 const personRouter = Router();
 
-personRouter.get('/:name', validator.validateReqParams, controller.getPersonByName);
+personRouter.get('/:user_id', validator.validateReqParams, controller.getPersonByID);
 
 personRouter.post('/', validator.validateReqBody, controller.createNewPerson);
 
-personRouter.patch('/:name', validator.validateReqParams, validator.validateReqBody, controller.editPerson);
+personRouter.patch('/:user_id', validator.validateReqParams, validator.validateReqBody, controller.editPerson);
 
-personRouter.delete('/:name', validator.validateReqParams, controller.deletePerson);
+personRouter.delete('/:user_id', validator.validateReqParams, controller.deletePerson);
 
 module.exports = personRouter;

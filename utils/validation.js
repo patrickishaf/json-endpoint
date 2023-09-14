@@ -17,13 +17,9 @@ exports.validateBodyWithSchema = (schema, req, res, next) => {
 }
 
 exports.validateParamsWithSchema = (req, res, next) => {
-  const { name } = req.params;
-  if (!name) {
+  const { user_id } = req.params;
+  if (!user_id) {
     return res.status(400).json(ErrorResponse.from(ErrorMessages.noNameParam));
-  }
-  const floatName = parseFloat(name);
-  if (!Number.isNaN(floatName)) {
-    return res.status(400).json(ErrorResponse.from(ErrorMessages.invalidNameParam));
   }
   next();
 }

@@ -1,7 +1,9 @@
 const ErrorMessages = {
   internalServerError: 'something went wrong on the server',
   noNameParam: 'no `name` parameter in your request',
-  invalidNameParam: 'invalid name parameter'
+  invalidReqParams: 'invalid request params',
+  invalidReqBody: 'invaid request body',
+  invalidUserID: 'invalid user ID',
 }
 
 module.exports = ErrorMessages;

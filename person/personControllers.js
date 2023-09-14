@@ -2,8 +2,6 @@ const ErrorMessages = require("../utils/errorMesages");
 const { ErrorResponse, SuccessResponse } = require("../utils/responses");
 const { saveNewPerson, findPersonWithID, editPerson, deletePerson } = require("./personDB");
 
-// 65025092df7f32c5d10b5764
-
 exports.getPersonByID = async function(req, res) {
   const { user_id } = req.params;
 

@@ -49,7 +49,9 @@ Here are the CRUD endpoints available:
 For detailed API documentation, please refer to the DOCUMENTATION.md file.
 
 ## Testing the API
-You can test the API using tools like Postman or curl. Refer to the documentation for example requests and responses.
+You can test the API using tools like Postman or curl. This is a link to the published documentation:
+
+https://documenter.getpostman.com/view/27707407/2s9YC5wruy
 
 
 ## Acknowledgments

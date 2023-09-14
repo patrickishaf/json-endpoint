@@ -16,7 +16,7 @@ This is an open API and you don't need any authetication to access it
 Every response is either a _SuccessResponse_ or _ErrorResponse_ object.
 
 _SuccessResponse_ and _ErrorResponse_ both have the structure below:
- ```
+ ```typescript
  {
     status: string
     message: string | undefined
@@ -30,7 +30,7 @@ The main difference between both response types is that for every _SuccessRespon
 
 ### Sample success response
 
-```
+```javascript
 {
     status: 'success',
     message: 'Person has been updated successfully',
@@ -65,7 +65,7 @@ These endpoints are available for consumption:
 > _500 Internal Server Error_ if something goes wrong on the server and the fetch is unable to complete successfully
 >
 ### Success Response Body
-```
+```javascript
 {
     "status": "success",
     "data": {
@@ -75,7 +75,7 @@ These endpoints are available for consumption:
 }
 ```
 ### Error Response Body
-```
+```javascript
 {
     "status": "error",
     "data": "something went wrong on the server"
@@ -100,7 +100,7 @@ These endpoints are available for consumption:
 > _500 Internal Server Error_ if something goes wrong on the server and the creation is unable to complete successfully
 >
 ### Success Response Body
-```
+```javascript
 {
     "status": "success",
     "message": "created new person successfully"
@@ -111,7 +111,7 @@ These endpoints are available for consumption:
 }
 ```
 ### Error Response Body
-```
+```javascript
 {
     "status": "error",
     "data": "something went wrong on the server"
@@ -136,7 +136,7 @@ These endpoints are available for consumption:
 > _500 Internal Server Error_ if something goes wrong on the server and the update is unable to complete successfully
 >
 ### Success Response Body
-```
+```javascript
 {
     "status": "success",
     "message": "updated user successfully",
@@ -144,7 +144,7 @@ These endpoints are available for consumption:
 }
 ```
 ### Error Response Body
-```
+```javascript
 {
     "status": "error",
     "data": "something went wrong on the server"
@@ -169,7 +169,7 @@ These endpoints are available for consumption:
 > _500 Internal Server Error_ if something goes wrong on the server and the user deletion is unable to complete successfully
 >
 ### Success Response Body
-```
+```javascript
 {
     "status": "success",
     "message": "deleted Margrove Park successfully",
@@ -180,7 +180,7 @@ These endpoints are available for consumption:
 }
 ```
 ### Error Response Body
-```
+```javascript
 {
     "status": "error",
     "data": "invalid user ID"
